@@ -59,11 +59,11 @@
       <!-- <ua:String>http://localhost:48401/UA/ComServerWrapper</ua:String> -->
     </BaseAddresses>
     <SecurityPolicies>
-      <!--Removing no security option from the configuration as this is a security risk
+      <!--Removing no security option from the configuration as this is a security risk -->
       <ServerSecurityPolicy>
         <SecurityMode>None_1</SecurityMode>
         <SecurityPolicyUri>http://opcfoundation.org/UA/SecurityPolicy#None</SecurityPolicyUri>
-      </ServerSecurityPolicy>-->
+      </ServerSecurityPolicy>
 
       <ServerSecurityPolicy>
         <SecurityMode>Sign_2</SecurityMode>
