@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA COM Interop Library", "ComIOP\Common\UA COM Interop Library.csproj", "{24D3C616-ED4C-4AF9-B529-7B418EC8ACC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA COM Server Wrapper", "ComIOP\Wrapper\ServerWrapper\UA COM Server Wrapper.csproj", "{F4805912-A3F9-4045-BC63-01F34A216EE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMtoUAServer", "ComIOP\Wrapper\ServerWrapper\COMtoUAServer.csproj", "{F4805912-A3F9-4045-BC63-01F34A216EE7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UA COM Server Class Library", "ComIOP\Wrapper\Common\OPC Sample Utility Classes.vcxproj", "{268AE545-D614-4B66-AEF3-C5B85919AD9D}"
 EndProject
