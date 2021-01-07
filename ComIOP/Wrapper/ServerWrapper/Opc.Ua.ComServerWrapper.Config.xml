@@ -149,7 +149,7 @@
             <ServerUrl>opc.com://OPCSERVER/OPC.DeltaV.1</ServerUrl>
             <ServerName>DA</ServerName>
             <MaxReconnectWait>10000</MaxReconnectWait>
-            <SeperatorChars></SeperatorChars>
+            <SeperatorChars>/</SeperatorChars>
             <AvailableLocales>
               <ua:String>en-US</ua:String>
             </AvailableLocales>
