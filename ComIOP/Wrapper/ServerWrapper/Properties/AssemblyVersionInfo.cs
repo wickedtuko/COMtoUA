@@ -33,15 +33,15 @@ internal static class AssemblyVersionInfo
     /// <summary>
     /// The current copy right notice.
     /// </summary>
-    public const string Copyright = "Copyright © 2004-2019 OPC Foundation, Inc";
+    public const string Copyright = "Copyright © 2021 Tuko Tech, Copyright © 2004-2019 OPC Foundation, Inc";
 
     /// <summary>
     /// The current build version.
     /// </summary>
-    public const string CurrentVersion = "1.04.353";
+    public const string CurrentVersion = "1.04.354";
 
     /// <summary>
     /// The current build file version.
     /// </summary>
-    public const string CurrentFileVersion = "1.04.353.0";
+    public const string CurrentFileVersion = "1.04.354.0";
 }
