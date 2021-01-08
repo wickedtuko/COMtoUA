@@ -174,7 +174,13 @@ namespace Opc.Ua.Com.Client
                 return result;
             }
 
-            uaValue.SourceTimestamp = daValue.Timestamp;
+            if (daValue.Timestamp.Kind == DateTimeKind.Unspecified)
+            {
+                uaValue.SourceTimestamp = DateTime.SpecifyKind(daValue.Timestamp, DateTimeKind.Utc);
+            } else
+            {
+                throw new System.Exception(string.Format("The type of data from OPC server is not known: {0}", daValue.Timestamp.Kind.ToString()));
+            }
 
             if (daValue.Error < 0)
             {
