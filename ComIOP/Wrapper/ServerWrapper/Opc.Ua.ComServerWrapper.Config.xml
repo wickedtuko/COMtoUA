@@ -148,7 +148,7 @@
           <ComClientConfiguration i:type="ComDaClientConfiguration">
             <ServerUrl>opc.com://OPCSERVER/OPC.DeltaV.1</ServerUrl>
             <ServerName>DA</ServerName>
-            <MaxReconnectWait>10000</MaxReconnectWait>
+            <MaxReconnectWait>20000</MaxReconnectWait>
             <SeperatorChars>/</SeperatorChars>
             <AvailableLocales>
               <ua:String>en-US</ua:String>
