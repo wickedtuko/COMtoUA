@@ -355,6 +355,7 @@ namespace Opc.Ua.Com.Client
             out int groupHandle,
             out int revisedSamplingInterval)
         {
+            if (System.IO.File.Exists(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location), "flag.txt"))) { System.Diagnostics.Debugger.Break(); }
             groupHandle = 0;
             revisedSamplingInterval = 0;
             GCHandle hDeadband = GCHandle.Alloc(deadband, GCHandleType.Pinned);

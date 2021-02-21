@@ -73,22 +73,24 @@ namespace Opc.Ua.Com
             string subjectName = Utils.Format("{0}, {1}", commonName, domainName);
 
             // create a new certificate with a new public key pair.
-            certificate = CertificateFactory.CreateCertificate(
-                id.StoreType,
-                id.StorePath,
-                null,
-                configuration.ApplicationUri,
-                configuration.ApplicationName,
-                subjectName,
-                hostNames,
-                2048,
-                DateTime.UtcNow - TimeSpan.FromHours(1),
-                120,
-                256,
-                false,
-                null,
-                null);
+            //certificate = CertificateFactory.CreateCertificate(
+            //    id.StoreType,
+            //    id.StorePath,
+            //    null,
+            //    configuration.ApplicationUri,
+            //    configuration.ApplicationName,
+            //    subjectName,
+            //    hostNames,
+            //    2048,
+            //    DateTime.UtcNow - TimeSpan.FromHours(1),
+            //    120,
+            //    256,
+            //    false,
+            //    null,
+            //    null);
 
+            certificate = CertificateFactory.CreateCertificate(configuration.ApplicationUri, configuration.ApplicationName, subjectName, hostNames)
+                .CreateForRSA();
             // update and save the configuration file.
             id.Certificate = certificate;
             configuration.SaveToFile(configuration.SourceFilePath);
