@@ -141,51 +141,48 @@
     <MaxEventQueueSize>10000</MaxEventQueueSize>
   </ServerConfiguration>
 
-  <Extensions>
-    <ua:XmlElement>
-      <ComWrapperServerConfiguration xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/SDK/COMInterop">
-        <WrappedServers>
-          <ComClientConfiguration i:type="ComDaClientConfiguration">
-            <ServerUrl>opc.com://OPCSERVER/OPC.DeltaV.1</ServerUrl>
-            <ServerName>DA</ServerName>
-            <MaxReconnectWait>60000</MaxReconnectWait>
-            <SeperatorChars>/</SeperatorChars>
-            <AvailableLocales>
-              <ua:String>en-US</ua:String>
-            </AvailableLocales>
-            <BrowseToNotSupported>false</BrowseToNotSupported>
-          </ComClientConfiguration>
-		<!--
-          <ComClientConfiguration i:type="ComAeClientConfiguration">
-            <ServerUrl>opc.com://localhost/Softing.OPCToolboxDemo_ServerAE.1/{2E565243-B238-11D3-842D-0008C779D775}</ServerUrl>
-            <ServerName>AE</ServerName>
-            <MaxReconnectWait>10000000</MaxReconnectWait>
-            <SeperatorChars>\</SeperatorChars>
-            <AvailableLocales>
-              <ua:String>en-US</ua:String>
-              <ua:String>de-DE</ua:String>
-              <ua:String>ja-JP</ua:String>
-            </AvailableLocales>
-          </ComClientConfiguration>
-		  -->
-          <!--
-          <ComClientConfiguration i:type="ComHdaClientConfiguration">
-            <ServerUrl>opc.com://localhost/OPCSample.OpcHdaServer/{6a5eedec-1509-4627-997f-993ccb65ab7c}</ServerUrl>
-            <ServerName>HDA</ServerName>
-            <MaxReconnectWait>10000</MaxReconnectWait>
-            <SeperatorChars></SeperatorChars>
-            <AddCapabilitiesToServerObject>true</AddCapabilitiesToServerObject>
-            <AttributeSamplingInterval>1000</AttributeSamplingInterval>
-            <TreatUncertainAsBad>true</TreatUncertainAsBad>
-            <PercentDataBad>0</PercentDataBad>
-            <PercentDataGood>100</PercentDataGood>
-            <SteppedSlopedExtrapolation>false</SteppedSlopedExtrapolation>
-          </ComClientConfiguration>
-          -->
-        </WrappedServers>
-      </ComWrapperServerConfiguration>
-    </ua:XmlElement>
-  </Extensions>
+    <Extensions>
+        <ua:XmlElement>
+            <ComWrapperServerConfiguration xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/SDK/COMInterop">
+                <WrappedServers>
+					<ComClientConfiguration i:type="ComDaClientConfiguration">
+						<ServerUrl>opc.com://OPCSERVER/OPC.DeltaV.1</ServerUrl>
+						<ServerName>DA</ServerName>
+						<MaxReconnectWait>60000</MaxReconnectWait>
+						<SeperatorChars>/</SeperatorChars>
+						<AvailableLocales>
+							<ua:String>en-US</ua:String>
+						</AvailableLocales>
+						<BrowseToNotSupported>false</BrowseToNotSupported>
+					</ComClientConfiguration>
+					<ComClientConfiguration i:type="ComAeClientConfiguration">
+						<ServerUrl>opc.com://OPCSERVER/DeltaV.OPCEventServer.1</ServerUrl>
+						<ServerName>AE</ServerName>
+						<MaxReconnectWait>300000</MaxReconnectWait>
+						<SeperatorChars>/</SeperatorChars>
+						<AvailableLocales>
+							<string>en-US</string>
+						</AvailableLocales>
+						<BrowseToNotSupported>false</BrowseToNotSupported>
+					</ComClientConfiguration>
+					<!--
+                    <ComClientConfiguration i:type="ComHdaClientConfiguration">
+                    <ServerUrl>opc.com://localhost/OPCSample.OpcHdaServer/{6a5eedec-1509-4627-997f-993ccb65ab7c}</ServerUrl>
+                    <ServerName>HDA</ServerName>
+                    <MaxReconnectWait>10000</MaxReconnectWait>
+                    <SeperatorChars></SeperatorChars>
+                    <AddCapabilitiesToServerObject>true</AddCapabilitiesToServerObject>
+                    <AttributeSamplingInterval>1000</AttributeSamplingInterval>
+                    <TreatUncertainAsBad>true</TreatUncertainAsBad>
+                    <PercentDataBad>0</PercentDataBad>
+                    <PercentDataGood>100</PercentDataGood>
+                    <SteppedSlopedExtrapolation>false</SteppedSlopedExtrapolation>
+                    </ComClientConfiguration>
+            -->
+                </WrappedServers>
+            </ComWrapperServerConfiguration>
+        </ua:XmlElement>
+    </Extensions>
 
   <TraceConfiguration>
     <OutputFilePath>%CommonApplicationData%\OPC Foundation\Logs\Opc.Ua.ComServerWrapper.log.txt</OutputFilePath>
