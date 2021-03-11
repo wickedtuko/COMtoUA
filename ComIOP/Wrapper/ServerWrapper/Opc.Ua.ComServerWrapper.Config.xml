@@ -159,7 +159,7 @@
 						<ServerUrl>opc.com://OPCSERVER/DeltaV.OPCEventServer.1</ServerUrl>
 						<ServerName>AE</ServerName>
 						<MaxReconnectWait>300000</MaxReconnectWait>
-						<SeperatorChars />
+						<SeperatorChars>/</SeperatorChars>
 						<AvailableLocales>
 							<string>en-US</string>
 						</AvailableLocales>
